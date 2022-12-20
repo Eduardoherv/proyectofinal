@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Página web</title>
+    <link rel="shortcut icon" href="img/alexcgdesign.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <section class="textos-header">
+            <h1>APLICACIÓN PARA BASTÓN INTELIGENTE - EPIT - UNSA</h1>
+            <h2>GRUPO 4</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+    </header>
+    
+<head>
+    
+    
+    <script
+        src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+    <script src="js/typed.custom.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+    $(function(){
+
+        $("#typed").typed({
+            strings: ["Este es el proyecto del Grupo 4", "Cargando . . .", "Cargando . . .", "Cargando . . .","Cargando . . .", "El usuario escogio la ruta #1"],
+            typeSpeed: 200,
+      callback: function(){
+        shift();
+      }
+        });
+
+    });
+  function shift(){
+      $(".head-wrap").addClass("shift-text");
+      terminalHeight();
+  }
+
+  function terminalHeight(){
+      var termHeight = $(".terminal-height");
+      var value = termHeight.text();
+      value = parseInt(value);
+      setTimeout(function(){
+          if (value > 10){
+              value = value-1;
+              this.txtValue = value.toString();
+              termHeight.text(this.txtValue);
+              self.terminalHeight();
+          }
+          else{
+              clearTimeout();
+          }
+      }, 180);
+  }
+    </script>
+    <link href="css/main.css" rel="stylesheet" />
+  <style>
+    .header {
+      background-position: top right;
+    }
+
+    .carbonads-wrapper {
+      width: 330px;
+      height: 120px;
+    }
+
+    #carbonads * {
+      margin: initial;
+      padding: initial;
+    }
+    #carbonads {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial,
+        sans-serif;
+    }
+    #carbonads {
+      display: flex;
+      max-width: 330px;
+      background-color: hsl(0, 0%, 98%);
+      box-shadow: 0 1px 4px 1px hsla(0, 0%, 0%, 0.1);
+      padding: 5px;
+      z-index: 100;
+    }
+    #carbonads a {
+      color: inherit;
+      text-decoration: none;
+    }
+    #carbonads a:hover {
+      color: inherit;
+    }
+    #carbonads span {
+      position: relative;
+      display: block;
+      overflow: hidden;
+    }
+    #carbonads .carbon-wrap {
+      display: flex;
+    }
+    #carbonads .carbon-img {
+      display: block;
+      margin: 0;
+      line-height: 1;
+    }
+    #carbonads .carbon-img img {
+      display: block;
+    }
+    #carbonads .carbon-text {
+      font-size: 13px;
+      padding: 10px;
+      margin-bottom: 16px;
+      line-height: 1.5;
+      text-align: left;
+    }
+    #carbonads .carbon-poweredby {
+      display: block;
+      padding: 6px 8px;
+      background: #f1f1f2;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+      font-size: 8px;
+      line-height: 1;
+      border-top-left-radius: 3px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    .cta-buttons {
+      min-height: 110px;
+      padding-bottom: 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    @media (max-width: 600px) {
+      .cta-buttons {
+        flex-wrap:  wrap;
+      }
+      .cta-buttons .btn {
+        margin-bottom: 20px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="head-wrap">
+
+        <div class="text-editor-wrap">
+            <div class="title-bar"><span class="title">UNIVERSIDAD NACIONAL DE SAN AGUSTÍN &mdash; EPIT &mdash; 80x<span class="terminal-height">25</span></span></div>
+            <div class="text-body">
+                _ <span id="typed"></span>
+            </div>
+        </div>
+        <span class="tagline">Esperando movimiento por parte del bastón</span>
+    </div>
+  <div class="wrap">
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11539016-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+<p align="center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d478.42411657308355!2d-71.5268307027053!3d-16.404858569629376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424af75b433129%3A0x4cbe9ccdf18cd3fc!2sUNSA%20-%20Ingenier%C3%ADas!5e0!3m2!1ses!2spe!4v1671495689542!5m2!1ses!2spe" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>UNSA</h4>
+                <p></p>
+            </div>
+            <div class="content-foo">
+                <h4>EPIT</h4>
+                <p></p>
+            </div>
+            <div class="content-foo">
+                <h4>PROYECTO FINAL</h4>
+                <p></p>
+            </div>
+        </div>
+        <A HREF="https://www.unsa.edu.pe"><h2 class="titulo-final">&copy; UNIVERSIDAD NACIONAL DE SAN AGUSTÍN | EPIT</h2></A>
+    </footer>
+</body>
+
+</html>
